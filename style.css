@@ -28,21 +28,18 @@ a{
     border-radius: 5px;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     background-color: black;
 }
 
 .bandlist > div{
-    width: 400px;
+    flex-basis: 100px;
     margin: 10px;
     padding: 10px;
     border: solid;
     text-align: center;
 }
 
-.bandlist > div > img{
-    width: 400px;
-    height: 250px;
-}
 
 .original{
     padding: 10px 10px;
@@ -77,22 +74,15 @@ footer{
 }
 
 @media (max-width: 480px){
-    img{
-        width: 50%;
-    }
 
     .bandlist{
-        display: flex;
+        display: inline-flex;
         flex-direction: column;
+        flex-wrap: wrap;
     }
 
     .bandlist > div{
-        
-    }
-
-    .bandlist > div > img{
-        width: 50%;
-        height: 50%;
+        flex-basis: 250px;
     }
 
     .original-trio{
