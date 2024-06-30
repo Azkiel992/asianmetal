@@ -1,0 +1,107 @@
+body{
+    background-color: #181c19;
+    color: white;
+    font-family: Orbitron;
+}
+
+img{
+    width: 400px;
+}
+a{
+    color: red;
+}
+
+.navigation{
+    display:flex;
+    gap: 10px;
+}
+
+.navigation > div{
+    background-color: red;
+    border: solid;
+    border-color: black;
+}
+
+.bandlist{
+    border: solid;
+    border-color: white;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+}
+
+.bandlist > div{
+    width: 400px;
+    margin: 10px;
+    padding: 10px;
+    border: solid;
+    text-align: center;
+}
+
+.bandlist > div > img{
+    width: 400px;
+    height: 250px;
+}
+
+.original{
+    padding: 10px 10px;
+    float:left;
+}
+.trio{
+    padding: 10px 10px;
+    text-align: center;
+    margin: 10px;
+}
+.new{
+    float: right;
+}
+.band-name{
+    color: red;
+    font-weight: bold;
+}
+
+.dont-float{
+    clear: both;
+    display: block;
+    text-align: center;
+}
+
+#song-list{
+    clear: both;
+}
+
+footer{
+    text-align: center;
+    clear: both;
+}
+
+@media (max-width: 480px){
+    img{
+        width: 50%;
+    }
+
+    .bandlist{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bandlist > div{
+        
+    }
+
+    .bandlist > div > img{
+        width: 50%;
+        height: 50%;
+    }
+
+    .original-trio{
+        float:none;
+        padding: 0px 0px;
+    }
+    
+    .new-trio{
+        padding: 0px 0px;
+        float: none;
+    }
+}
