@@ -1,7 +1,11 @@
 body{
-    background-color: #181c19;
+    background-color: black;
     color: white;
-    font-family: Orbitron;
+    font-family: Abel;
+}
+
+#headline{
+    text-align: center;
 }
 
 img{
@@ -16,31 +20,36 @@ a{
     font-size: 70%;
 }
 .navigation{
+    color: darkred;
     display:flex;
-    gap: 10px;
+    gap: 100px;
+    padding: 5px;
+    margin: 10px 0px;
+    justify-content: center;
 }
 
 .navigation > div{
-    background-color: red;
-    border: solid;
-    border-color: black;
+    font-size: large;
+    font-weight: bold;
 }
 
 .bandlist{
     border: solid;
-    border-color: white;
-    border-radius: 5px;
+    border-width: 1px 0px;
+    border-color: darkred;
     display: inline-flex;
     flex-wrap: wrap;
     flex-direction: row;
-    background-color: black;
+    gap: 5px;
+    justify-content: center;
 }
 
 .bandlist > div{
+    background-color: #181c19;
+    border: solid;
     flex-basis: 25%;
     margin: 10px;
     padding: 10px;
-    border: solid;
     text-align: center;
 }
 
@@ -85,6 +94,13 @@ footer{
 }
 
 @media (max-width: 480px){
+
+    .navigation{
+        justify-content: right;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
 
     .bandlist{
         display: inline-flex;
