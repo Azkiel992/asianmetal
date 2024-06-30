@@ -8,9 +8,6 @@ img{
     width: 80%;
 }
 
-.trio > img{
-    width: 40%;
-}
 a{
     color: red;
 }
@@ -57,7 +54,7 @@ a{
     float: left;
 }
 .trio{
-    display: inline;
+    width: 40%;
     padding: 10px 10px;
     text-align: center;
     margin: 10px;
@@ -87,7 +84,7 @@ footer{
     clear: both;
 }
 
-@media (max-width: 420px){
+@media (max-width: 480px){
 
     .bandlist{
         display: inline-flex;
@@ -99,13 +96,8 @@ footer{
         flex-basis: 200px;
     }
 
-    .original-trio{
-      float:none;
-        padding: 5px 5px;
-    }
-    
-    .new-trio{
-        padding: 5px 5px;
-       float: none;
+    .trio{
+        float:none;
+        width: 100%;
     }
 }
